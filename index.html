@@ -12,14 +12,14 @@
       </head>
       <body>
 
-<div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  </div>
 
 
 
+<!-- containter starts -->
 <div class="container">
 <form>
+
+
 <div class="form-group"><!--1st row  -->
   <div class="col-md-8 col-sm-10"><!--1st col  -->
     <h1 class="pt-12 pb-2">The Life and Art of Rosa Bonheur</h1>
@@ -27,43 +27,49 @@
 </div>
 
 
-   <div class="card" style="width: 30rem;">
-     <img src="images/Rosa_Bonheur.jpg" class="card-img-top" alt="...">
-     <div class="card-body">
+<!-- card code courtesy of https://getbootstrap.com/docs/4.4/components/card/ -->
+
+<div class="form-group"><!--1st row  -->
+  <div class="col-md-8 col-sm-10"><!--1st col  -->
+
+<div class="card" style="width: 30rem;">
+      <img src="images/Rosa_Bonheur.jpg" class="card-img-top" alt="Portrait of artist">
+<div class="card-body">
        <h5 class="card-title">Portrait of Rosa Bonheur by Edouard Louis Dubufe</h5>
        <p class="card-text">  Rosa Bonheur was a French female painter born in 1822. At the time of her death she was the most famous female painter in the world. Her most famous painting is <a href="https://en.wikipedia.org/wiki/The_Horse_Fair"> The Horse Fair</a>
          which resides in the Metropolitan Museum of Art. You can read more about her
          <a href="https://en.wikipedia.org/wiki/Rosa_Bonheur"> here.
          </a></p>
+</div>
 
  <div class="alert alert-dark" role="alert">
-         This image is in the public domain. Painting by Edouard Louis Dubufe. See original file  <a title="Edouard Louis Dubufe
-              / Public domain" href="https://commons.wikimedia.org/wiki/File:Rosa_Bonheur_with_Bull_, _by_E_L_Dubufe.jpg">here.</a>
-            </div>
-       </div>
+    This image is in the public domain. Painting by Edouard Louis Dubufe. See original file  <a href="https://commons.wikimedia.org/wiki/File:Rosa_Bonheur_with_Bull_, _by_E_L_Dubufe.jpg">here.</a>
+</div>
+  </div>
 
-    </div><!--end 1column  -->
-    </div><!--end 1row  -->
-
+    </div><!--end column  -->
+    </div><!--end row  -->
 
 
-<div class="form-group"><!--2nd row  -->
-  <div class="col-md-8 col-sm-10">
-    <h3 class="pt-12 pb-2">
-  Test your knowledge about Rosa Bonheur with this fun quiz.
-  </h3>
 
-<legend >Where was Rosa Bonheur born?</legend>
+<div class="form-group"><!--nd row  -->
+
+ <div class="col-md-8 col-sm-10">
+    <h3 class="pt-12 pb-2"> Test your knowledge about Rosa Bonheur with this fun quiz.
+   </h3>
+
+<label class="form-control-label form-control-lg">Where was Rosa Bonheur born?</label>
       <label><input class="form-control" type="text" name="birthplace" id="birthplace" > </label>
-    </div>
 
-<div class="col-md-6 col-sm-10"><!--2nd col col 2 -->
-      <legend>What did Rosa apprentice to become before she studied painting?</legend>
+</div>
+
+<div class="col-md- col-sm-10"><!--2nd col col 2 -->
+      <label class="form-control-label form-control-lg">What did Rosa apprentice to become before she studied painting?</label>
       <label><input class="form-control" type="text" name="email" id="apprentice" > </label>
-    </div>
+</div>
 
-<div class="col-md-6 col-sm-10"><!--2nd col col 2 -->
-        <legend>Why did Rosa focus her work on animals?</legend>
+<div class="col-md- col-sm-10"><!--2nd col col 2 -->
+        <label class="form-control-label form-control-lg">Why did Rosa focus her work on animals?</label>
         <textarea class="form-control" name="about_you" rows="3" cols="55" id="rosaFocus">
         </textarea>
 </div>
@@ -76,48 +82,50 @@
 
 <!--check boxes  -->
 <div>
-<legend>What is Rosas favorite subject matter for her paintings?</legend> Select all that apply
+<label class="form-control-label form-control-lg">What is Rosas favorite subject matter for her paintings?</label>
+<label class="form-control-label"> Select all that apply</label>
 </div>
 
 
 <div class="form-check">
-<label class="form-check-label"  for="horses">
+<label class="form-check-label">
 <input class="form-check-input" type="checkbox" name="subjectMatter"  value="horses">Horses</label>
 </div>
 
 
 <div class="form-check">
-<label class="form-check-label" for="Lions">
+<label class="form-check-label">
 <input class="form-check-input" type="checkbox" name="subjectMatter"  value="Lions">Lions</label>
 </div>
 
 <div class="form-check">
-<label class="form-check-label" for="FrAristocracy">
+<label class="form-check-label">
 <input class="form-check-input" type="checkbox" name="subjectMatter"  value="FrenchAristocracy">French Aristocracy</label>
 </div>
 
 <div class="form-check">
-<label class="form-check-label" for="BullCattle">
+<label class="form-check-label">
 <input class="form-check-input" type="checkbox" name="subjectMatter"  value="BullsCattle">Bulls and Cattle</label>
 </div>
 
 <div class="form-check">
-<label class="form-check-label" for="MythicalAnimals">
+<label class="form-check-label">
 <input class="form-check-input" type="checkbox" name="subjectMatter"  value="MythicalAnimals">Mythical Animals</label>
 </div>
 
 <div class="form-check">
-  <label class="form-check-label"  for="Racoons">
+  <label class="form-check-label">
 <input class="form-check-input" type="checkbox" name="subjectMatter"  value="Racoons">Racoons</label>
-    </div>
 </div>
+
+</div></div>
 
 
 
 <div class="form-group">
-  <div class="col-md-8 col-sm-10"><!--3nd col col 1 -->
-<legend>
-    <label> Rosa was an unusual woman for her times. Which of the following is NOT true about Rosa?</label>
+<div class="col-md-6 col-sm-10"><!--3nd col col 1 -->
+   <label class="form-control-label form-control-lg">
+   Rosa was an unusual woman for her times. Which of the following is NOT true about Rosa?</label>
     <select class="form-control" name="lifestyle" id="RosaLifestyle">
       <option>Select an option</option>
       <option>She dressed as a man to go unnoticed the horse sales.</option>
@@ -127,46 +135,45 @@
       <option>She liked to go hunting.</option>
       <option>She thought men were stupid and preferred bulls.</option>
     </select>
-</legend>
-</div>
 
-    </div><!--end 3column  -->
-    </div><!--end 3row  -->
+
+</div><!--end 3column  -->
+</div><!--end 3row  -->
 
 
 <!--check boxes  -->
     <div class="form-group"><!--4th row  -->
     <div class="col-md-8 col-sm-10"><!--4th col col 1 -->
 
-<legend>The Bonheur family was a family of artists. How many children (siblings) were in the Bonheur family?</legend>
+<label class="form-control-label form-control-lg">The Bonheur family was a family of artists. How many children (siblings) were in the Bonheur family?</label>
 
 <div class="form-check">
-<label class="form-check-label" for="children">
+<label class="form-check-label">
 <input class="form-check-input" type="radio"  name="children" value="twochildren">Rosa was an only child</label>
 </div>
 
 <div class="form-check">
-<label class="form-check-label" for="children">
+<label class="form-check-label">
 <input class="form-check-input" type="radio"  name="children" value="twochildren">Two children</label>
 </div>
 
 <div class="form-check">
-<label class="form-check-label" for="children">
+<label class="form-check-label">
 <input class="form-check-input" type="radio"  name="children" value="threechildren">Three children</label>
 </div>
 
 <div class="form-check">
-<label class="form-check-label" for="threechildren">
+<label class="form-check-label">
 <input class="form-check-input" type="radio"  name="children" value="fourchildren">Four children</label>
 </div>
-
 
     </div><!--end 4column  -->
     </div><!--end 4row  -->
 
-    <div class="form-group"><!--5th row  -->
 
-      <div class="col-md-8 col-sm-10"><!--5th col col 1 -->
+
+<div class="form-group"><!--5th row  -->
+<div class="col-md-8 col-sm-10"><!--5th col col 1 -->
         <input  class="btn btn-primary" type="submit" value="Submit">
         <input class="btn btn-primary" type="reset" value="Reset">
       </div><!--end 5column  -->
